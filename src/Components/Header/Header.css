@@ -1,0 +1,29 @@
+.Header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff2d2;
+  text-shadow: 0px 2px 4px #4b4b4b;
+  font-size: 64px;
+  font-weight: 500;
+  padding: 15px;
+  font-family: 'Staatliches', cursive;
+  width: 100%;
+}
+
+.Header svg {
+  -webkit-filter: drop-shadow(0px 2px 2px #4b4b4b);
+          filter: drop-shadow(0px 2px 2px #4b4b4b);
+}
+
+@media only screen and (max-width: 540px) {
+  .Header {
+    font-size: 32px;
+  }
+}

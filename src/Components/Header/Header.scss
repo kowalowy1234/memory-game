@@ -1,0 +1,24 @@
+@import '../../Variables/ColorScheme.scss';
+
+.Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff2d2;
+  text-shadow: 0px 2px 4px rgb(75, 75, 75);
+  font-size: 64px; 
+  font-weight: 500;
+  padding: 15px;
+  font-family: 'Staatliches', cursive;
+  width: 100%;
+
+  svg {
+    filter : drop-shadow(0px 2px 2px rgb(75, 75, 75));
+  }
+}
+
+@media only screen and (max-width: 540px){
+  .Header {
+    font-size: 32px;
+  }
+}

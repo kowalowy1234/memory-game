@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+}
+
+.App__game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+.App__game__score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+  width: 100%;
+  margin: -50px 0px -30px 0px;
+  font-family: 'Staatliches', cursive;
+  font-size: 24px;
+}
+
+.App__game__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: calc(600px + 4 * 40px);
+  margin-top: 40px;
+  gap: 40px;
+}
+
+.App__game__settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 30px;
+  border-radius: 10px;
+  gap: 60px;
+  background-color: #eeeeee;
+  -webkit-box-shadow: 0px 2px 10px #8a8a8a;
+          box-shadow: 0px 2px 10px #8a8a8a;
+  margin-top: 55px;
+}
+
+@media only screen and (max-width: 460px) {
+  .App__cards {
+    width: 100%;
+    margin: 80px 0;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .App__game {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  .App__game__settings {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    gap: 60px;
+  }
+  .App__game__cards {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .App__game__cards {
+    gap: 20px;
+    width: 100%;
+    margin: 0px 0px 80px 0px;
+  }
+  .App__game__settings {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    margin-top: 0px;
+  }
+}

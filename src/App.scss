@@ -1,0 +1,97 @@
+@import './Variables/ColorScheme.scss';
+
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+
+  &__game{  
+    display: flex;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    &__score {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      width: 100%;
+      margin: -50px 0px -30px 0px;
+      font-family: 'Staatliches', cursive;
+      font-size: 24px;
+    }
+
+    &__cards {
+      display: flex;
+      justify-content: center;
+      align-self: flex-start;
+      flex-wrap: wrap;
+      max-width: calc(600px + 4 * 40px);
+      margin-top: 40px;
+      gap: 40px;
+    }
+
+    &__settings {
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+      padding: 30px;
+      border-radius: 10px;
+      gap: 60px;
+      background-color: rgb(238, 238, 238);
+      box-shadow: 0px 2px 10px rgb(138, 138, 138);
+      margin-top: 55px;
+    }
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .App {
+    &__cards {
+      width: 100%;
+      margin: 80px 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .App {
+    &__game {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      &__settings {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        gap: 60px;
+      }
+
+      &__cards {
+        align-self: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 540px){
+  .App {
+    &__game__cards {
+      gap: 20px;
+      width: 100%;
+      margin: 0px 0px 80px 0px;
+    }
+
+    &__game__settings {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 0px;
+    }
+  }
+}
