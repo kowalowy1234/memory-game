@@ -62,6 +62,7 @@ const App : React.FC = () => {
         id : e.id,
         url : e.src.original,
       }))
+      restartGame();
       setCards(mappedData.concat(mappedData).sort(() => 0.5 - Math.random()));
       setLoading(false);
     })
