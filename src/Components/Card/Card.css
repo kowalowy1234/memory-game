@@ -9,6 +9,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 
 .Card .front {

@@ -109,8 +109,13 @@ const App : React.FC = () => {
   }, [game.selected]);
 
   const handleClose = () => {
+    setLoading(true);
     setOpen(false);
+    setCards(prevCards => prevCards.sort(() => 0.5 - Math.random()));
     restartGame();
+    const delay = setTimeout(() : void => {
+      setLoading(false);
+    }, 200);
   };
 
   useEffect(() : void => {
@@ -149,7 +154,7 @@ const App : React.FC = () => {
               <p>Attempts: {Math.ceil(game.score / 2)}</p>
               <p>Pairs left: {game.left}</p>
             </div>
-            {!error && cardElements}
+            {!error && !loading && cardElements}
             {error && <Alert severity="error">Something went wrong while loading photos, sorry!</Alert>}
             {loading && <CircularProgress />}
           </div>
